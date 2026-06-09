@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@font-face{
+  font-family:'IntegralCF';
+  src:url('https://saintcrowe.github.io/crowedemigod/integralcf-bold.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/integralcf-bold.otf') format('opentype');
+  font-weight:700; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'IntegralCF';
+  src:url('https://saintcrowe.github.io/crowedemigod/integralcf-bold-oblique.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/integralcf-bold-oblique.otf') format('opentype');
+  font-weight:700; font-style:italic; font-display:swap;
+}
+@font-face{
+  font-family:'IntegralCF';
+  src:url('https://saintcrowe.github.io/crowedemigod/integralcf-heavy.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/integralcf-heavy.otf') format('opentype');
+  font-weight:900; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'IntegralCF';
+  src:url('https://saintcrowe.github.io/crowedemigod/integralcf-heavy-oblique.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/integralcf-heavy-oblique.otf') format('opentype');
+  font-weight:900; font-style:italic; font-display:swap;
+}
+@font-face{
+  font-family:'DisketMono';
+  src:url('https://saintcrowe.github.io/crowedemigod/disket-mono-regular.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/disket-mono-regular.ttf')   format('truetype');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'DisketMono';
+  src:url('https://saintcrowe.github.io/crowedemigod/disket-mono-bold.woff2') format('woff2'),
+      url('https://saintcrowe.github.io/crowedemigod/disket-mono-bold.ttf')   format('truetype');
+  font-weight:700; font-style:normal; font-display:swap;
+}
