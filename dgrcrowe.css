@@ -1,8 +1,171 @@
-.dgrsig {
-    width: 230px;
-    height: 200px;
-    background-image: url(https://i.imgur.com/NxzAh7m.png);
-    margin: 10px auto;
-    outline: 1px solid #191919;
-    outline-offset: 2px;
+@import url('https://saintcrowe.github.io/crowedemigod/fonts.css');
+
+#algsig{
+  --ac:   #8c70a9;          
+  --ac-d: #4a3a63;          
+  --cy:   #5ec8c0;          
+  --ink:  #d6d0de;
+  --mut:  #9b93a8;
+  --bg:   #080808;
+  --fdisplay:'IntegralCF', sans-serif;     
+  --fread:   'Rajdhani', sans-serif;                
+  --fmono:   'DisketMono', monospace; 
+  width:230px; height:200px;
+  margin:14px auto; position:relative; overflow:hidden;
+  border:8px solid var(--bg);
+  outline:1px solid #1a1a1a; outline-offset:3px;
+  box-shadow:2px 5px 6px #040404;
+  background:var(--bg) url('https://i.imgur.com/qW1d64Q.png') center/cover no-repeat;
+  font-family:var(--fread);
+  font-synthesis:none;          
 }
+#algsig *{ box-sizing:border-box; }
+#algsig ::selection{ background:var(--ac-d); color:#fff; }
+#algsig::after{
+  content:""; position:absolute; inset:0;
+  background:var(--ac); opacity:.16; mix-blend-mode:multiply;
+  pointer-events:none; z-index:1;
+}
+.alg-tex{
+  position:absolute; inset:0; width:100%; height:100%;
+  opacity:.08; mix-blend-mode:overlay; pointer-events:none; z-index:1;
+}
+.alg-label{
+  position:absolute; top:0; right:0; z-index:4;
+  background:var(--ac); color:#241a30;
+  overflow:hidden; height:16px;
+}
+.alg-label span{
+  display:block; height:16px; line-height:12px; padding:2px 8px;
+  font-family:var(--fmono);
+  font-weight:700; font-size:8px; letter-spacing:.5px; text-transform:uppercase;
+  transition:transform .45s ease;
+}
+#algsig:hover .alg-label span{ transform:translateY(-100%); }
+.alg-phrase{
+  position:absolute; left:16px; bottom:14px; z-index:3;
+  font-family:var(--fdisplay);
+  font-weight:700;
+  font-size:34px; line-height:.9; letter-spacing:1px; text-transform:uppercase;
+  color:var(--ink);
+  text-shadow:0 1px 2px rgba(0,0,0,.85);
+  transition:opacity .45s ease;
+  animation:alg-main 3.4s infinite steps(1,end);
+}
+.alg-phrase::before, .alg-phrase::after{
+  content:attr(data-text);
+  position:absolute; top:0; left:0; width:100%;
+}
+.alg-phrase::before{ color:var(--ink); animation:alg-shard 3.4s infinite steps(1,end); }   
+.alg-phrase::after {                                                                         
+  color:var(--cy);
+  text-shadow:2px 0 var(--ac), -1px 0 rgba(94,200,192,.6);
+  animation:alg-fringe 3.4s infinite steps(1,end);
+}
+#algsig:hover .alg-phrase{ opacity:0; }
+@keyframes alg-main{
+  0%,7%  { clip-path:inset(0 0 0 0);     transform:translate(0,0) skewX(0); }
+  8%     { clip-path:inset(0 0 0 0);     transform:translate(-1px,0); }
+  9%     { clip-path:inset(28% 0 0 0);   transform:translate(-3px,0) skewX(-6deg); }
+  11%    { clip-path:inset(0 0 0 0);     transform:translate(1px,0); }
+  25%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  26%    { clip-path:inset(0 0 38% 0);   transform:translate(3px,0); }
+  28%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  43%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  44%    { clip-path:inset(46% 0 44% 0); transform:translate(-2px,0); }   
+  45%    { clip-path:inset(0 0 0 0);     transform:translate(2px,0); }
+  46%    { clip-path:inset(50% 0 0 0);   transform:translate(-3px,-1px) skewX(5deg); }
+  48%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  62%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  63%    { clip-path:inset(0 0 0 0);     transform:translate(1px,0); }
+  64%    { clip-path:inset(18% 0 60% 0); transform:translate(4px,0); }    
+  66%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  80%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  81%    { clip-path:inset(0 0 22% 0);   transform:translate(-4px,0) skewX(-4deg); }
+  83%    { clip-path:inset(40% 0 30% 0); transform:translate(3px,1px); }
+  85%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+  100%   { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
+}
+@keyframes alg-shard{
+  0%,8%  { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  9%     { clip-path:inset(0 0 72% 0);   transform:translate(12px,-1px) skewX(-6deg); }
+  11%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  25%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  26%    { clip-path:inset(62% 0 0 0);   transform:translate(-13px,1px); }
+  28%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  43%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  44%    { clip-path:inset(46% 0 44% 0); transform:translate(16px,0); }
+  45%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  46%    { clip-path:inset(0 0 50% 0);   transform:translate(-10px,0) skewX(6deg); }
+  48%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  62%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  63%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  64%    { clip-path:inset(18% 0 60% 0); transform:translate(14px,0); }
+  66%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  80%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  81%    { clip-path:inset(78% 0 0 0);   transform:translate(-12px,0); }
+  83%    { clip-path:inset(40% 0 30% 0); transform:translate(11px,-1px); }
+  85%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  100%   { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+}
+@keyframes alg-fringe{
+  0%,8%  { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  9%     { clip-path:inset(0 0 72% 0);   transform:translate(-9px,0); }
+  11%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  26%    { clip-path:inset(62% 0 0 0);   transform:translate(10px,0); }
+  28%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  44%    { clip-path:inset(46% 0 44% 0); transform:translate(-15px,0); }
+  45%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  46%    { clip-path:inset(0 0 50% 0);   transform:translate(9px,0); }
+  48%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  64%    { clip-path:inset(18% 0 60% 0); transform:translate(-13px,0); }
+  66%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  81%    { clip-path:inset(78% 0 0 0);   transform:translate(11px,0); }
+  83%    { clip-path:inset(40% 0 30% 0); transform:translate(-10px,0); }
+  85%    { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+  100%   { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
+}
+.alg-cap{
+  position:absolute; left:16px; bottom:48px; z-index:3;
+  font-family:var(--fmono);
+  font-weight:700; font-size:8px; letter-spacing:1px; text-transform:uppercase;
+  color:var(--ink); text-shadow:0 1px 2px rgba(0,0,0,.85);
+  opacity:1; transition:opacity .45s ease;
+}
+#algsig:hover .alg-cap{ opacity:0; }
+.alg-panel{
+  position:absolute; inset:0; z-index:2;
+  background:rgba(8,8,8,.84);
+  border-left:5px solid var(--ac);
+  transform:translateX(100%);
+  transition:transform 1s ease-in-out;
+}
+#algsig:hover .alg-panel{ transform:translateX(0); }
+.alg-lyr{
+  position:absolute; left:0; right:0; top:44px; z-index:3;
+  padding:0 18px;
+  font-family:var(--fread);
+  font-weight:500; font-size:9px; line-height:13px; letter-spacing:.5px;
+  text-transform:uppercase; text-align:justify;
+  color:var(--mut);
+  opacity:0; transform:translateY(10px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+.alg-lyr strong{ color:var(--ac); font-weight:700; border-bottom:2px solid var(--ac-d); }
+#algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; }
+.alg-tag{
+  position:absolute; left:18px; bottom:22px; z-index:3;
+  font-family:var(--fdisplay);
+  font-weight:700;
+  font-size:30px; line-height:1; letter-spacing:1px; text-transform:uppercase;
+  color:transparent; -webkit-text-stroke:1.5px var(--ink);
+  opacity:0; transform:translateY(12px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.alg-tag::after{                              
+  content:""; position:absolute; left:0; bottom:-7px; height:3px; width:0;
+  background:var(--ac);
+  transition:width .8s cubic-bezier(.2,.7,.2,1);
+}
+#algsig:hover .alg-tag{ opacity:1; transform:translateY(0); transition-delay:.5s; }
+#algsig:hover .alg-tag::after{ width:100%; transition-delay:.85s; }
