@@ -1,15 +1,15 @@
 @import url('https://saintcrowe.github.io/crowedemigod/fonts.css');
 
 #algsig{
-  --ac:   #8c70a9;          
-  --ac-d: #4a3a63;          
-  --cy:   #5ec8c0;          
-  --ink:  #d6d0de;
-  --mut:  #9b93a8;
-  --bg:   #080808;
-  --fdisplay:'IntegralCF', sans-serif;     
-  --fread:   'Rajdhani', sans-serif;                
-  --fmono:   'DisketMono', monospace; 
+  --ac:#8c70a9;
+  --ac-d:#4a3a63;
+  --cy:#5ec8c0;
+  --ink:#d6d0de;
+  --mut:#9b93a8;
+  --bg:#080808;
+  --fdisplay:'IntegralCF', sans-serif;
+  --fread:'Rajdhani', sans-serif;
+  --fmono:'DisketMono', monospace;
   width:230px; height:200px;
   margin:14px auto; position:relative; overflow:hidden;
   border:8px solid var(--bg);
@@ -17,7 +17,7 @@
   box-shadow:2px 5px 6px #040404;
   background:var(--bg) url('https://i.imgur.com/qW1d64Q.png') center/cover no-repeat;
   font-family:var(--fread);
-  font-synthesis:none;          
+  font-synthesis:none;
 }
 #algsig *{ box-sizing:border-box; }
 #algsig ::selection{ background:var(--ac-d); color:#fff; }
@@ -42,7 +42,7 @@
   position:absolute; left:16px; bottom:14px; z-index:3;
   font-family:var(--fdisplay);
   font-weight:700;
-  font-size:34px; line-height:.9; letter-spacing:1px; text-transform:uppercase;
+  font-size:34px; line-height:1.1; letter-spacing:1px; text-transform:uppercase;
   color:var(--ink);
   text-shadow:0 1px 2px rgba(0,0,0,.85);
   transition:opacity .45s ease;
@@ -52,8 +52,8 @@
   content:attr(data-text);
   position:absolute; top:0; left:0; width:100%;
 }
-.alg-phrase::before{ color:var(--ink); animation:alg-shard 3.4s infinite steps(1,end); }   
-.alg-phrase::after {                                                                        
+.alg-phrase::before{ color:var(--ink); animation:alg-shard 3.4s infinite steps(1,end); }
+.alg-phrase::after{
   color:var(--cy);
   text-shadow:2px 0 var(--ac), -1px 0 rgba(94,200,192,.6);
   animation:alg-fringe 3.4s infinite steps(1,end);
@@ -68,13 +68,13 @@
   26%    { clip-path:inset(0 0 38% 0);   transform:translate(3px,0); }
   28%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
   43%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
-  44%    { clip-path:inset(46% 0 44% 0); transform:translate(-2px,0); }   
+  44%    { clip-path:inset(46% 0 44% 0); transform:translate(-2px,0); }
   45%    { clip-path:inset(0 0 0 0);     transform:translate(2px,0); }
   46%    { clip-path:inset(50% 0 0 0);   transform:translate(-3px,-1px) skewX(5deg); }
   48%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
   62%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
   63%    { clip-path:inset(0 0 0 0);     transform:translate(1px,0); }
-  64%    { clip-path:inset(18% 0 60% 0); transform:translate(4px,0); }    
+  64%    { clip-path:inset(18% 0 60% 0); transform:translate(4px,0); }
   66%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
   80%    { clip-path:inset(0 0 0 0);     transform:translate(0,0); }
   81%    { clip-path:inset(0 0 22% 0);   transform:translate(-4px,0) skewX(-4deg); }
@@ -122,7 +122,7 @@
   100%   { clip-path:inset(0 0 100% 0);  transform:translate(0,0); }
 }
 .alg-cap{
-  position:absolute; left:16px; bottom:48px; z-index:3;
+  position:absolute; left:16px; bottom:55px; z-index:3;
   font-family:var(--fmono);
   font-weight:700; font-size:8px; letter-spacing:1px; text-transform:uppercase;
   color:var(--ink); text-shadow:0 1px 2px rgba(0,0,0,.85);
@@ -153,12 +153,12 @@
   position:absolute; left:18px; bottom:22px; z-index:3;
   font-family:var(--fdisplay);
   font-weight:700;
-  font-size:30px; line-height:1; letter-spacing:1px; text-transform:uppercase;
+  font-size:30px; line-height:1.1; letter-spacing:1px; text-transform:uppercase;
   color:transparent; -webkit-text-stroke:1.5px var(--ink);
   opacity:0; transform:translateY(12px);
   transition:opacity .6s ease, transform .6s ease;
 }
-.alg-tag::after{                              /* barra inferior que crece */
+.alg-tag::after{
   content:""; position:absolute; left:0; bottom:-7px; height:3px; width:0;
   background:var(--ac);
   transition:width .8s cubic-bezier(.2,.7,.2,1);
