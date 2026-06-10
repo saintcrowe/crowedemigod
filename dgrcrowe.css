@@ -1,15 +1,17 @@
 @import url('https://saintcrowe.github.io/crowedemigod/fonts.css');
-
+ :root {
+  --ac:#8c70a9; 
+  --ac-d:#4a3a63; 
+  --cy:#5ec8c0;
+  --bg: #080808;
+  --ink:#d6d0de; 
+  --mut:#9b93a8; 
+  --line:#22202a;
+  --fdisplay:'IntegralCF', sans-serif;
+  --fread:'Rajdhani', sans-serif;
+  --fmono:'DisketMono', monospace;
+ } 
 #algsig {
-    --ac: #8c70a9;
-    --ac-d: #4a3a63;
-    --cy: #5ec8c0;
-    --ink: #d6d0de;
-    --mut: #9b93a8;
-    --bg: #080808;
-    --fdisplay: 'IntegralCF', sans-serif;
-    --fread: 'Rajdhani', sans-serif;
-    --fmono: 'DisketMono', monospace;
     width: 230px;
     height: 200px;
     margin: 14px auto;
@@ -217,3 +219,50 @@
 }
 #algsig:hover .alg-tag{ opacity:1; transform:translateY(0); transition-delay:.5s; }
 #algsig:hover .alg-tag::after{ width:100%; transition-delay:.85s; }
+
+.aeq-doc{
+  font-synthesis:none;
+}
+.aeq-doc *{ box-sizing:border-box; }
+.aeq-doc .aeq-cols{
+  column-count:2; column-gap:36px;
+  font-family:var(--fread); font-size:15px; line-height:1.75; text-align:justify;
+  color:var(--ink);
+}
+.aeq-doc .aeq-cols p{ margin:0 0 14px; }
+.aeq-doc .aeq-cols p:first-child{ margin-top:0; }
+@media (max-width:480px){ .aeq-doc .aeq-cols{ column-count:1; } }
+.aeq-doc .aeq-mark{ text-align:center; margin:42px 0 22px; }
+.aeq-doc .aeq-mark .rn{
+  font-family:var(--fmono); font-size:11px; letter-spacing:3px; text-transform:lowercase;
+  color:var(--mut);
+}
+.aeq-doc .aeq-mark.sl .rn::before{ content:"\2215\2215\00A0\00A0"; color:var(--ac); }
+.aeq-doc .aeq-mark.sl .rn::after { content:"\00A0\00A0\2215\2215"; color:var(--ac); }
+.aeq-doc .aeq-mark.bar::after{ content:""; display:block; width:40px; height:2px; background:var(--ac); margin:10px auto 0; }
+.aeq-doc .aeq-cross{ text-align:center; margin:30px 0; color:var(--ac); font-family:var(--fmono); font-size:13px; }
+.aeq-doc .aeq-cross::before{ content:"+"; }
+.aeq-doc .aeq-glitch{ position:relative; display:inline-block; color:inherit; }
+.aeq-doc .aeq-glitch::before, .aeq-doc .aeq-glitch::after{
+  content:attr(data-text); position:absolute; top:0; left:0; pointer-events:none;
+}
+.aeq-doc .aeq-glitch::before{ color:var(--ac); transform:translate(-1.5px,-1px); clip-path:inset(15% 0 50% 0); }
+.aeq-doc .aeq-glitch::after { color:var(--cy); transform:translate(1.5px,1px);  clip-path:inset(55% 0 12% 0); }
+.aeq-doc .aeq-name{ color:var(--ac); font-weight:700; }
+.aeq-doc .aeq-key{ font-family:var(--fmono); color:var(--ac); font-size:.9em; letter-spacing:.3px; }
+.aeq-doc .aeq-emph{ border-bottom:1px dotted var(--ac); text-decoration:none; color:inherit; }
+.aeq-doc .aeq-chip{
+  font-family:var(--fmono); font-size:.74em; letter-spacing:1px; text-transform:uppercase;
+  color:var(--ink); background:rgba(140,112,169,.16); border:1px solid var(--ac-d);
+  padding:1px 6px; border-radius:2px; white-space:nowrap;
+}
+.aeq-doc .aeq-htitle{ text-align:center; margin:42px 0 26px; }
+.aeq-doc .aeq-htitle .kick{ display:block; font-family:var(--fmono); font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--mut); margin-bottom:8px; }
+.aeq-doc .aeq-htitle .big{ display:block; font-family:var(--fdisplay); font-weight:900; font-size:42px; line-height:.95; letter-spacing:1px; text-transform:uppercase; color:var(--ink); }
+.aeq-doc .aeq-htitle.bar::after{ content:""; display:block; width:60px; height:3px; background:var(--ac); margin:14px auto 0; }
+.aeq-doc .aeq-clabel{
+  display:inline-block; font-family:var(--fmono); font-weight:700; font-size:9px;
+  letter-spacing:2px; text-transform:uppercase; color:#241a30; background:var(--ac); padding:3px 9px;
+}
+.aeq-doc .aeq-slashes{ height:14px; margin:24px 0; opacity:.85;
+  background:repeating-linear-gradient(118deg, var(--ac) 0 9px, transparent 9px 22px); }
