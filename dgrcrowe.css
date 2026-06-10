@@ -193,11 +193,11 @@
     color: var(--ink);
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity .7s ease, transform .7s ease;
+    transition: all .7s ease-in-out;
 }
 .alg-lyr strong{ color:var(--ac)!important; font-weight:700; border-bottom:2px solid var(--ac-d); }
-#algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; 
-  transition:opacity .7s ease, transform .7s ease;}
+#algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.5s; 
+  transition:all .7s ease-in-out;}
 .alg-tag{
   position:absolute;
   left: 30px;
