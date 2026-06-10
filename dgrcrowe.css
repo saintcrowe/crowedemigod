@@ -173,24 +173,25 @@
 }
 #algsig:hover .alg-panel{ transform:translateX(0);
   transition:transform 1s ease-in-out; }
-.alg-lyr{
-  position:absolute;
-  left: 8px;
-  right:0;
-  top:44px;
-  z-index:3;
-  padding: 0 20px;
-  font-family:var(--fread);
-  font-weight:500;
-  font-size:9px;
-  line-height: 14px;
-  letter-spacing:.5px;
-  text-transform:uppercase;
-  text-align:justify;
-  color:var(--ink);
-  opacity:0;
-  transform:translateY(10px);
-  transition:opacity .7s ease, transform .7s ease;
+.alg-lyr {
+    position: absolute;
+    left: 8px;
+    right: 0;
+    top: 44px;
+    z-index: 3;
+    padding: 0 20px;
+    font-family: var(--fread);
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: justify;
+    color: var(--ink);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .7s ease, transform .7s ease;
+    transition-delay: .7s;
 }
 .alg-lyr strong{ color:var(--ac)!important; font-weight:700; border-bottom:2px solid var(--ac-d); }
 #algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; 
