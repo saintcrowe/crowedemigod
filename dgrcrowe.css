@@ -8,7 +8,7 @@
   --mut:#9b93a8; 
   --line:#22202a;
   --fdisplay:'IntegralCF', sans-serif;
-  --fread:'Rajdhani', sans-serif;
+  --fread:'Outfit', sans-serif;
   --fmono:'DisketMono', monospace;
  } 
 #algsig {
@@ -225,9 +225,15 @@
 }
 .aeq-doc *{ box-sizing:border-box; }
 .aeq-doc .aeq-cols{
-  column-count:2; column-gap:36px;
-  font-family:var(--fread); font-size:15px; line-height:1.75; text-align:justify;
-  color:var(--ink);
+    column-count: 2;
+    column-gap: 36px;
+    font-family: var(--fread);
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: justify;
+    color: var(--ink);
+    opacity: .9;
+    font-weight: 300;
 }
 .aeq-doc .aeq-cols p{ margin:0 0 14px; }
 .aeq-doc .aeq-cols p:first-child{ margin-top:0; }
