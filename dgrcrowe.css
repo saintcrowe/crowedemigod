@@ -5,16 +5,24 @@
   --ac-d:#4a3a63;
   --cy:#5ec8c0;
   --ink:#d6d0de;
+  --mut:#9b93a8;
   --bg:#080808;
   --fdisplay:'IntegralCF', sans-serif;
   --fread:'Rajdhani', sans-serif;
   --fmono:'DisketMono', monospace;
-  width:230px; height:200px;
+  width:230px; height:200px;            
   margin:14px auto; position:relative; overflow:hidden;
-  border:8px solid var(--bg);
+  border:8px solid transparent;         
   outline:1px solid #1a1a1a; outline-offset:3px;
   box-shadow:2px 5px 6px #040404;
-  background:var(--bg) url('https://i.imgur.com/qW1d64Q.png') center/cover no-repeat;
+  background-color:var(--bg);
+  background-image:url('https://i.imgur.com/qW1d64Q.png'),
+    url('https://saintcrowe.github.io/crowedemigod/cross.svg');
+  background-repeat:no-repeat, repeat;
+  background-position:center, 0 0;       
+  background-size:cover, auto;
+  background-origin:content-box, border-box;
+  background-clip:content-box, border-box;
   font-family:var(--fread);
   font-synthesis:none;
 }
