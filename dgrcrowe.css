@@ -5,7 +5,6 @@
   --ac-d:#4a3a63;
   --cy:#5ec8c0;
   --ink:#d6d0de;
-  --mut:#9b93a8;
   --bg:#080808;
   --fdisplay:'IntegralCF', sans-serif;
   --fread:'Rajdhani', sans-serif;
@@ -172,12 +171,12 @@
   letter-spacing:.5px;
   text-transform:uppercase;
   text-align:justify;
-  color:var(--mut);
+  color:var(--ink);
   opacity:0;
   transform:translateY(10px);
   transition:opacity .7s ease, transform .7s ease;
 }
-.alg-lyr strong{ color:var(--ac); font-weight:700; border-bottom:2px solid var(--ac-d); }
+.alg-lyr strong{ color:var(--ac)!important; font-weight:700; border-bottom:2px solid var(--ac-d); }
 #algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; }
 .alg-tag{
   position:absolute;
