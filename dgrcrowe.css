@@ -74,6 +74,7 @@
   text-shadow:0 1px 2px rgba(0,0,0,.85);
   transition:opacity .45s ease;
   animation:alg-main 3.4s infinite steps(1,end);
+  transition-delay: .7s;
 }
 .alg-phrase::before, .alg-phrase::after{
   content:attr(data-text);
@@ -162,6 +163,7 @@
   text-shadow:0 1px 2px rgba(0,0,0,.85);
   opacity:1;
   transition:opacity .45s ease;
+  transition-delay: .7s;
 }
 #algsig:hover .alg-cap{ opacity:0; transition:opacity .45s ease;}
 .alg-panel{
@@ -191,7 +193,6 @@
     opacity: 0;
     transform: translateY(10px);
     transition: opacity .7s ease, transform .7s ease;
-    transition-delay: .7s;
 }
 .alg-lyr strong{ color:var(--ac)!important; font-weight:700; border-bottom:2px solid var(--ac-d); }
 #algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; 
