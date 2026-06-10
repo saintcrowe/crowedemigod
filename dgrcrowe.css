@@ -243,10 +243,10 @@
   font-family:var(--fmono); font-size:11px; letter-spacing:3px; text-transform:lowercase;
   color:var(--mut);
 }
-.aeq-doc .aeq-mark.sl .rn::before{ content:"\2215\2215\00A0\00A0"; color:var(--ac); }
-.aeq-doc .aeq-mark.sl .rn::after { content:"\00A0\00A0\2215\2215"; color:var(--ac); }
+.aeq-doc .aeq-mark.sl .rn::before{ content:"\2215\2215\00A0\00A0"; color:var(--cy); }
+.aeq-doc .aeq-mark.sl .rn::after { content:"\00A0\00A0\2215\2215"; color:var(--cy); }
 .aeq-doc .aeq-mark.bar::after{ content:""; display:block; width:40px; height:2px; background:var(--ac); margin:10px auto 0; }
-.aeq-doc .aeq-cross{ text-align:center; margin:30px 0; color:var(--ac); font-family:var(--fmono); font-size:13px; }
+.aeq-doc .aeq-cross{ text-align:center; margin:30px 0; color:var(--cy); font-family:var(--fmono); font-size:13px; }
 .aeq-doc .aeq-cross::before{ content:"+"; }
 .aeq-doc .aeq-glitch{ position:relative; display:inline-block; color:inherit; }
 .aeq-doc .aeq-glitch::before, .aeq-doc .aeq-glitch::after{
@@ -254,9 +254,9 @@
 }
 .aeq-doc .aeq-glitch::before{color: var(--ink);transform:translate(-1.5px,-1px);clip-path:inset(15% 0 50% 0);}
 .aeq-doc .aeq-glitch::after {color: var(--ink);transform:translate(1.5px,1px);clip-path:inset(55% 0 12% 0);}
-.aeq-doc .aeq-name{ color:var(--ac); font-weight:700; }
+.aeq-doc .aeq-name{ color:var(--cy); font-weight:700; }
 .aeq-doc .aeq-key{ font-family:var(--fmono); color:var(--ac); font-size:.9em; letter-spacing:.3px; }
-.aeq-doc .aeq-emph{ border-bottom:1px dotted var(--ac); text-decoration:none; color:inherit; }
+.aeq-doc .aeq-emph{ border-bottom:1px dotted var(--cy); text-decoration:none; color:inherit; }
 .aeq-doc .aeq-chip{
   font-family:var(--fmono); font-size:.74em; letter-spacing:1px; text-transform:uppercase;
   color:var(--ink); background:rgba(140,112,169,.16); border:1px solid var(--ac-d);
@@ -270,5 +270,9 @@
   display:inline-block; font-family:var(--fmono); font-weight:700; font-size:9px;
   letter-spacing:2px; text-transform:uppercase; color:#241a30; background:var(--ac); padding:3px 9px;
 }
-.aeq-doc .aeq-slashes{ height:14px; margin:24px 0; opacity:.85;
-  background:repeating-linear-gradient(118deg, var(--ac) 0 9px, transparent 9px 22px); }
+.aeq-doc .aeq-slashes {
+    height: 14px;
+    margin: 24px 0;
+    opacity: .6;
+    background: repeating-linear-gradient(118deg, transparent 0 1px, var(--ac) 3px 6px, transparent 7px 22px);
+}
