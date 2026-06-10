@@ -148,7 +148,7 @@
   opacity:1;
   transition:opacity .45s ease;
 }
-#algsig:hover .alg-cap{ opacity:0; }
+#algsig:hover .alg-cap{ opacity:0; transition:opacity .45s ease;}
 .alg-panel{
   position:absolute; inset:0; z-index:2;
   background:rgba(8,8,8,.84);
@@ -156,7 +156,8 @@
   transform:translateX(100%);
   transition:transform 1s ease-in-out;
 }
-#algsig:hover .alg-panel{ transform:translateX(0); }
+#algsig:hover .alg-panel{ transform:translateX(0);
+  transition:transform 1s ease-in-out; }
 .alg-lyr{
   position:absolute;
   left: 8px;
@@ -177,7 +178,8 @@
   transition:opacity .7s ease, transform .7s ease;
 }
 .alg-lyr strong{ color:var(--ac)!important; font-weight:700; border-bottom:2px solid var(--ac-d); }
-#algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; }
+#algsig:hover .alg-lyr{ opacity:1; transform:translateY(0); transition-delay:.4s; 
+  transition:opacity .7s ease, transform .7s ease;}
 .alg-tag{
   position:absolute;
   left: 30px;
