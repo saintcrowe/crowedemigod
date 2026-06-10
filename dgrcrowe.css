@@ -304,6 +304,8 @@
     letter-spacing: .5px;
 }
 .aeq-spec p:last-child{ margin-bottom:0; }
+.aeq-spec strong, .aeq-doc .aeq-spec b{ color:var(--ac); font-weight:700; }
+.aeq-spec i, .aeq-doc .aeq-spec em{ color:var(--ink); }
 .aeq-doc .aeq-notes{ margin:28px 0; }
 .aeq-doc .aeq-notes .nhead{ text-align:center; margin:0 0 20px; }
 .aeq-doc .aeq-notes .nhead .kick{ display:block; font-family:var(--fmono); font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--mut); margin-bottom:6px; }
