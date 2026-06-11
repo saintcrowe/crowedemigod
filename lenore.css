@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
+
+.wn{
+  --acc: var(--semidiosesromanos);   
+  --wn-mut:#7c7c82;
+  --wn-line:rgba(255,255,255,.13);
+  color:var(--wn-ink);
+  font-family:inherit;
+  line-height:1.65;
+  text-align:justify;
+  max-width: 700px;
+  margin: auto;
+}
+
+.wn-head{ display:flex; align-items:center; gap:14px; margin:0 0 6px; text-align:left; }
+.wn-idx{
+  flex:none; width:30px; height:30px; display:flex; align-items:center; justify-content:center;
+  font-family:'Space Mono',monospace; font-size:11px; font-weight:700; color:var(--acc);
+  border:1px solid var(--acc);
+}
+.wn-ttl{
+  font-family:'Syne',sans-serif; font-weight:800; font-size:30px; line-height:.9; letter-spacing:1px;
+  text-transform:uppercase; color:transparent; -webkit-text-stroke:1.3px var(--acc); white-space:nowrap;
+}
+.wn-head::after{ content:""; flex:1; height:1px; background:var(--wn-line); }
+.wn-cap{
+  display:block; margin:0 0 18px 44px;
+  font-family:'Space Mono',monospace; font-size:8.5px; letter-spacing:3px; text-transform:uppercase; color:var(--wn-mut);
+}
+
+.wn strong, .wn b{ color:var(--acc); font-weight:700; border-bottom:1px solid var(--acc); }
+.wn i, .wn em{color: var(--acc)!important;}
+.wn-tag{ font-family:'Space Mono',monospace; font-size:.8em; letter-spacing:1px; text-transform:uppercase; color:var(--acc); }
+.wn-tag::before{ content:"["; } .wn-tag::after{ content:"]"; }
+
+.wn-row{ display:flex; align-items:center; gap:11px; margin:0 0 9px; text-align:left; }
+.wn-row .ic{ flex:none; width:28px; height:28px; display:flex; align-items:center; justify-content:center; border:1px solid var(--acc); color:var(--acc); }
+.wn-row .ic i{font-size:13px;color: var(--wn-mut)!important;}
+
+.wn-div{ display:flex; align-items:center; gap:14px; margin:22px 0; color:var(--acc); }
+.wn-div::before, .wn-div::after{ content:""; flex:1; height:1px; background:var(--wn-line); }
+.wn-div i{ font-size:10px; }
