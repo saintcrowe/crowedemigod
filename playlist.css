@@ -38,3 +38,26 @@
 .pl-track:hover .pl-title{ color:var(--pl-acc); }
 .pl-artist{ font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--pl-mut); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .pl-time{ flex:none; font-size:9px; letter-spacing:1px; color:var(--pl-mut); font-variant-numeric:tabular-nums; }
+
+.dat{
+  --dat-acc:var(--groups, #8a6c2c);    
+  --dat-ink:#ddd;
+  width:100%; color:var(--dat-ink); font-family:inherit;
+}
+.dat *{ box-sizing:border-box; }
+.dat-item{
+  position:relative; padding-left:15px;
+  font-size:13px; line-height:1.55; color:var(--dat-ink);
+}
+.dat-item:last-child{ margin-bottom:0; }
+.dat-item::before{
+  content:""; position:absolute; left:0; top:7px;
+  width:5px; height:5px; background:var(--dat-acc); transform:rotate(45deg);
+}
+.dat-k{
+  font-size:10px; letter-spacing:1.2px; text-transform:uppercase; font-weight:600;
+  color:var(--dat-acc); margin-right:8px;
+}
+.dat-item i, .dat-item em{ font-style:italic; }
+.dat.dot  .dat-item::before{ transform:none; border-radius:50%; }
+.dat.ring .dat-item::before{ transform:none; border-radius:50%; background:transparent; border:1px solid var(--dat-acc); width:6px; height:6px; top:6px; }
