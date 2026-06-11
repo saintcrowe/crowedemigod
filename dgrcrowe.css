@@ -337,8 +337,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #241a30;
-    background: var(--ac);
-    padding: 2px 5px 1px 5px;
+    background: var(--cy);
+    padding: 3px 5px 1px 5px;
     line-height: 1;
     margin-right: 6px;
 }
