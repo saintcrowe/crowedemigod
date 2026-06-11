@@ -259,7 +259,7 @@
 .aeq-doc .aeq-glitch::after {color: var(--ink);transform:translate(1.5px,1px);clip-path:inset(55% 0 12% 0);}
 .aeq-doc .aeq-name{ color:var(--ac); font-weight:700; }
 .aeq-doc .aeq-key{ font-family:var(--fmono); color:var(--ac); font-size:.9em; letter-spacing:.3px; }
-.aeq-doc .aeq-emph{ border-bottom:1px dotted var(--ac-d); text-decoration:none; color:inherit; }
+.aeq-doc .aeq-emph{ border-bottom:1px dotted var(--ac); text-decoration:none; color:inherit; }
 .aeq-doc .aeq-chip{
   font-family:var(--fmono); font-size:.74em; letter-spacing:1px; text-transform:uppercase;
   color:var(--ink); background:rgba(140,112,169,.16); border:1px solid var(--ac-d);
