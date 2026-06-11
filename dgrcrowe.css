@@ -342,3 +342,27 @@
     line-height: 1;
     margin-right: 6px;
 }
+.aeq-doc .aeq-feat{
+  margin:26px auto;
+  padding:20px 24px 22px;
+  border:1px solid var(--ac-d);
+  background:rgba(140,112,169,.05);
+  position:relative;
+}
+.aeq-doc .aeq-feat .fhead{text-align:center;}
+.aeq-doc .aeq-feat .fhead .lbl{
+  display:inline-block;
+  font-family:var(--fmono); font-weight:700; font-size:9px; letter-spacing:2px; text-transform:uppercase;
+  color:#241a30; background:var(--ac); padding:3px 10px;
+}
+.aeq-doc .aeq-feat .fhead .sub{
+  display:block; margin-top:9px;
+  font-family:var(--fmono); font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(--mut);
+}
+.aeq-doc .aeq-feat p{
+  margin:0;
+  font-family:var(--fread); font-weight:300; font-size:14px; line-height:1.75;
+  text-align:justify; hyphens:auto; -webkit-hyphens:auto; color:var(--ink);
+}
+.aeq-doc .aeq-feat strong, .aeq-doc .aeq-feat b{ color:var(--ac); font-weight:700; }
+.aeq-doc .aeq-feat i, .aeq-doc .aeq-feat em{ color:var(--ink); }
