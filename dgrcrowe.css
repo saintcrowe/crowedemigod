@@ -313,13 +313,23 @@
 .aeq-doc .aeq-notes .nhead .kick{ display:block; font-family:var(--fmono); font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--mut); margin-bottom:6px; }
 .aeq-doc .aeq-notes .nhead .big{ display:block; font-family:var(--fdisplay); font-weight:700; font-size:28px; line-height:1; letter-spacing:1px; text-transform:uppercase; color:var(--ink); }
 .aeq-doc .aeq-notes .nhead::after{ content:""; display:block; width:60px; height:3px; background:var(--cy); margin:12px auto 0; }
-.aeq-doc .aeq-notes .list{ column-count:2; column-gap:30px; }
+.aeq-doc .aeq-notes .list{    column-count: 3;
+    column-gap: 25px;}
 @media (max-width:480px){ .aeq-doc .aeq-notes .list{ column-count:1; } }
-.aeq-doc .aeq-note{
-  break-inside:avoid; position:relative; padding-left:20px; margin:0 0 13px;
-  font-family:var(--fread); font-size:14px; line-height:1.6; color:var(--ink);
+.aeq-doc .aeq-note {
+    break-inside: avoid;
+    position: relative;
+    padding-left: 20px;
+    margin: 0 0 13px;
+    font-family: var(--fread);
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-weight: 200;
+    letter-spacing: .5px;
+    filter: brightness(1.5);
 }
-.aeq-doc .aeq-note::before{ content:"+"; position:absolute; left:0; top:0; font-family:var(--fmono); font-weight:700; color:var(--ac); }
+.aeq-doc .aeq-note::before{ content:"+"; position:absolute; left:0; top:0; font-family:var(--fmono); font-weight:700; color:var(--cy); }
 .aeq-doc .aeq-note .k {
     display: inline-block;
     font-family: var(--fmono);
