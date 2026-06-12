@@ -1,6 +1,6 @@
 .ptsig{
-  --sig-acc:var(--groups, #c9a24a);
-  position:relative; width:400px; max-width:100%; height:175px; overflow:hidden;
+  --sig-acc:var(--groups);
+  position:relative; width:300px; max-width:100%; height:175px; overflow:hidden;
   background:#0f0f10 center/cover no-repeat;
   border:1px solid rgba(255,255,255,.10);
   font-family:inherit; color:#e8e8e8;
