@@ -429,18 +429,29 @@
 .aeq-relhead, .aeq-rels, .aeq-rel{ box-sizing:border-box; }
 .aeq-relhead *, .aeq-rels *, .aeq-rel *{ box-sizing:border-box; }
 .aeq-relhead{
-  position:relative; margin:0 0 18px; padding-bottom:9px;
-  font-family:var(--fdisplay); font-weight:900; font-size:18px; letter-spacing:1px;
-  text-transform:uppercase; color:var(--ink); border-bottom:1px solid var(--line);
+  position:relative;
+  margin:0 0 18px;
+  padding-bottom: 15px;
+  font-family:var(--fdisplay);
+  font-weight:900;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--ink);
+  border-bottom:1px solid var(--line);
 }
-.aeq-relhead::after{ content:""; position:absolute; left:0; bottom:-1px; width:90px; height:2px; background:var(--ac); }
+.aeq-relhead::after{content:"";position:absolute;left:0;bottom: -1px;width:90px;height:2px;background:var(--ac);}
 .aeq-rels{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 @media (max-width:560px){ .aeq-rels{ grid-template-columns:1fr 1fr; } }
 @media (max-width:380px){ .aeq-rels{ grid-template-columns:1fr; } }
 .aeq-rel{
-  position:relative; height:150px; overflow:hidden;
-  border:1px solid var(--line); background:#141118 center/cover no-repeat;
+  position:relative;
+  height:150px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:#141118 center/cover no-repeat;
   transition:border-color .3s ease;
+  cursor: crosshair;
 }
 .aeq-rel:hover{ border-color:var(--ac-d); }
 .aeq-rel::before{ content:""; position:absolute; inset:0; z-index:1;
@@ -530,3 +541,29 @@
 }
 .aeq-inv > span i::before{ color:var(--mut); }
 .aeq-inv > span i::after { color:var(--mut); }
+.aeq-relhead span:after,.aeq-relhead span:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    color: var(--ink);
+}
+.aeq-relhead span {
+    font-family: var(--fdisplay);
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 0.95;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(rgb(140, 112, 169) 60%, rgb(94, 200, 192) 40%) text;
+}
+.aeq-relhead span:after {
+    transform: translate(1.5px, 1px);
+    clip-path: inset(55% 0px 12%);
+}
+.aeq-relhead span:before {
+    transform: translate(-1.5px, -1px);
+    clip-path: inset(15% 0px 50%);
+}
