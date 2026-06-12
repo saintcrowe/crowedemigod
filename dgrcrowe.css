@@ -32,6 +32,7 @@
     background-clip: content-box, border-box;
     font-family: var(--fread);
     font-synthesis: none;
+    cursor: crosshair;
 }
 #algsig *{ box-sizing:border-box; }
 #algsig ::selection{ background:var(--ac-d); color:#fff; }
