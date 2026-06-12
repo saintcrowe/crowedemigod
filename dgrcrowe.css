@@ -497,3 +497,36 @@
 .aeq-cron-row .body{ min-width:0; line-height:1.35; }
 .aeq-cron-row .ti{ font-family:var(--fmono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ac); margin-right:6px; }
 .aeq-cron-row .meta{ font-family:var(--fread); font-size:12px; color:var(--mut); }
+
+.aeq-inv{ box-sizing:border-box; display:flex; flex-direction:column; gap:8px; }
+.aeq-inv *{ box-sizing:border-box; }
+
+.aeq-inv > span{
+  gap:14px;
+  padding: 11px 16px!important;
+  border: 1px solid var(--line)!important;
+  background: rgba(255,255,255,.015)!important;
+  cursor:help;
+  transition: border-color .25s ease, background .25s ease!important;
+}
+.aeq-inv > span:hover{ border-color:var(--ac-d)!important; background:rgba(140,112,169,.06)!important; }
+
+.aeq-inv > span b{
+  font-family: var(--fread)!important;
+  font-weight: 600!important;
+  font-size: 13px!important;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color: var(--ac)!important;
+}
+.aeq-inv > span i{
+  font-style: normal!important;
+  font-family: var(--fmono)!important;
+  font-size: 9px!important;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color: var(--ink)!important;
+  white-space:nowrap;
+}
+.aeq-inv > span i::before{ color:var(--mut); }
+.aeq-inv > span i::after { color:var(--mut); }
