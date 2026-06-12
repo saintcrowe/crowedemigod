@@ -1,5 +1,5 @@
 .ptsig{
-  --sig-acc:var(--groups);
+  --sig-acc:var(--group);
   position:relative;
   width:300px;
   max-width:100%;
@@ -10,6 +10,7 @@
   font-family:inherit;
   color:#e8e8e8;
   outline: 1px dotted #222;
+  margin: 10px auto;
 }
 .ptsig::after{ content:""; position:absolute; inset:0; pointer-events:none;
   background:linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.08)); }
