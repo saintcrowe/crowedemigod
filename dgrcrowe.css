@@ -404,7 +404,7 @@
 .aeq-pl .hd .lbl{display:inline-flex;align-items:center;gap:9px;font-family:var(--fmono);font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--ink);/* font-weight: 100; */}
 .aeq-pl .hd .ct{font-family:var(--fmono);font-size:8px;letter-spacing:2px;text-transform:uppercase;color: var(--cy);}
 .aeq-pl .eq{display:inline-flex;align-items:flex-end;gap:2px;height: 5px;}
-.aeq-pl .eq i{ width:2px; background:var(--ac); transform-origin:bottom; animation:aeqpl 1s ease-in-out infinite; }
+.aeq-pl .eq i{ width:2px; background:var(--cy); transform-origin:bottom; animation:aeqpl 1s ease-in-out infinite; }
 .aeq-pl .eq i:nth-child(1){ height:6px; animation-delay:-.2s; }
 .aeq-pl .eq i:nth-child(2){ height:11px; animation-delay:-.6s; }
 .aeq-pl .eq i:nth-child(3){ height:8px; animation-delay:0s; }
