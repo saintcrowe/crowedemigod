@@ -462,10 +462,9 @@
 }
 .aeq-rel .face .ico{ margin-bottom:auto; font-size:17px; color:var(--ac); }
 .aeq-rel .face .nm{
-  font-family:var(--fdisplay); font-weight:700; font-size:15px; line-height:1; letter-spacing:.5px; text-transform:uppercase;
-  background:linear-gradient(to bottom,#8c70a9 60%,#5ec8c0 40%); -webkit-background-clip:text; background-clip:text; color:transparent; width:fit-content;
+  font-family:var(--fdisplay); font-weight:700; font-size:15px; line-height:1; letter-spacing:.5px; text-transform:uppercase; color: var(--ink); width:fit-content;
 }
-.aeq-rel .face .rl{ margin-top:5px; font-family:var(--fmono); font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(--mut); }
+.aeq-rel .face .rl{ margin-top:5px; font-family:var(--fmono); font-size:8px; letter-spacing:2px; text-transform:uppercase;color: var(--ac);opacity: .7; }
 .aeq-rel:hover .face{ opacity:0; }
 .aeq-rel .reveal{
   position:absolute; inset:0; z-index:3; padding:13px 14px;
