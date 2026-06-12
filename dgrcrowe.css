@@ -482,7 +482,10 @@
 .aeq-cron-head{
   position:relative; margin:0 0 12px; padding-bottom:9px;
   font-family:var(--fdisplay); font-weight:900; font-size:17px; letter-spacing:1px;
-  text-transform:uppercase; color:var(--ink); border-bottom:1px solid var(--line);
+  text-transform:uppercase; color:var(--ink); border-bottom:1px solid var(--line);    margin-top: 15px;
+}
+.aeq-cron-head:first-of-type {
+    margin-top: 0;
 }
 .aeq-cron-head::after{ content:""; position:absolute; left:0; bottom:-1px; width:80px; height:2px; background:var(--ac); }
 .aeq-cron-head + .aeq-cron-list{ margin-bottom:26px; }
@@ -505,8 +508,18 @@
 }
 .aeq-cron-row .body{ min-width:0; line-height:1.35; }
 .aeq-cron-row .ti{ font-family:var(--fmono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ac); margin-right:6px; }
-.aeq-cron-row .meta{ font-family:var(--fread); font-size:12px; color:var(--mut); }
-
+.aeq-cron-row .meta {
+    font-family: var(--fread);
+    font-size: 10px;
+    color: var(--mut);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.aeq-cron-row .meta em {
+    color: var(--cy);
+    font-style: normal;
+    margin: 0px 5px;
+}
 .aeq-inv{ box-sizing:border-box; display:flex; flex-direction:column; gap:8px; }
 .aeq-inv *{ box-sizing:border-box; }
 
