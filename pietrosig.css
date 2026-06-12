@@ -1,29 +1,51 @@
 .ptsig{
   --sig-acc:var(--groups);
-  position:relative; width:300px; max-width:100%; height:175px; overflow:hidden;
+  position:relative;
+  width:300px;
+  max-width:100%;
+  height:175px;
+  overflow:hidden;
   background:#0f0f10 center/cover no-repeat;
-  border:1px solid rgba(255,255,255,.10);
-  font-family:inherit; color:#e8e8e8;
+  border: 2px solid #141414;
+  font-family:inherit;
+  color:#e8e8e8;
+  outline: 1px dotted #222;
 }
 .ptsig::after{ content:""; position:absolute; inset:0; pointer-events:none;
   background:linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.08)); }
 
 .ptsig-phrase{
-  position:absolute; left:20px; right:20px; bottom:18px; z-index:2;
-  font-size:13px; letter-spacing:3px; text-transform:uppercase; line-height:1.5;
+  position:absolute;
+  left:20px;
+  right:20px;
+  bottom:18px;
+  z-index:2;
+  font-size: 9px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  line-height:1.5;
   transition:opacity .4s ease, transform .4s ease;
+  font-weight: 400;
 }
-.ptsig-phrase::before{ content:""; display:block; width:28px; height:2px; background:var(--sig-acc); margin-bottom:9px; }
+.ptsig-phrase::before{content:"";display:block;width: 30px;height:2px;background:var(--sig-acc);margin-bottom:9px;}
 .ptsig:hover .ptsig-phrase{ opacity:0; transform:translateY(8px); }
 .ptsig-panel{
-  position:absolute; inset:0; z-index:3; padding:22px 26px;
-  display:flex; flex-direction:column; justify-content:center; gap:9px;
+  position:absolute;
+  inset:0;
+  z-index:3;
+  padding:22px 26px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  gap:9px;
   background:rgba(8,8,10,.82);
-  opacity:0; transform:translateY(10px); pointer-events:none;
+  opacity:0;
+  transform:translateY(10px);
+  pointer-events:none;
   transition:opacity .45s ease, transform .45s ease;
 }
 .ptsig:hover .ptsig-panel{ opacity:1; transform:translateY(0); }
 .ptsig-ico{ font-size:22px; color:var(--sig-acc); }                 
-.ptsig-title{ font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--sig-acc); }
-.ptsig-text{ font-size:12.5px; line-height:1.6; color:#dcdcdc; }
-.ptsig-quote{ font-style:italic; font-size:12px; color:#bcbcbc; }
+.ptsig-title{font-size: 10px;letter-spacing:3px;text-transform:uppercase;color:var(--sig-acc);font-weight: 900;}
+.ptsig-text{font-size: 8px;line-height:1.6;color:#dcdcdc;text-transform: uppercase;font-family: var(--f-mono);letter-spacing: 1px;width: 90%;}
