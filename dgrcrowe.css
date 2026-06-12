@@ -453,7 +453,7 @@
   transition:border-color .3s ease;
   cursor: crosshair;
 }
-.aeq-rel:hover{ border-color:var(--ac-d); }
+.aeq-rel:hover{ border-color:var(--ac); }
 .aeq-rel::before{ content:""; position:absolute; inset:0; z-index:1;
   background:linear-gradient(to top, rgba(0,0,0,.78), rgba(0,0,0,.12)); }
 .aeq-rel .face{
@@ -477,7 +477,6 @@
 .aeq-rel .reveal p{ margin:0; font-family:var(--fread); font-weight:300; font-size:11.5px; line-height:1.55; text-align:justify; color:var(--ink); }
 .aeq-rel .reveal strong, .aeq-rel .reveal b{ color:var(--ac); font-weight:700; }
 .aeq-rel .reveal i, .aeq-rel .reveal em{ color:var(--ink); font-style:italic; }
-
 
 .aeq-cron-head, .aeq-cron-list, .aeq-cron-row{ box-sizing:border-box; }
 .aeq-cron-row *{ box-sizing:border-box; }
