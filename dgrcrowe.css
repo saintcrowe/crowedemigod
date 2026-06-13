@@ -508,7 +508,7 @@
 }
 .aeq-cron-row .body{ min-width:0; line-height:1.35; }
 .aeq-cron-row .ti{ font-family:var(--fmono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ac); margin-right:6px; transition: all .2s ease;}
-.aeq-cron-row :hover .aeq-cron-row .ti {color: var(--ink); transition: all .2s ease;}
+.aeq-cron-row:hover .ti {color: var(--ink)!important; transition: all .2s ease;}
 .aeq-cron-row .meta {
     font-family: var(--fread);
     font-size: 9px;
