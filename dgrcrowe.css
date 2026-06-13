@@ -494,7 +494,7 @@
 .aeq-cron-row{
   display:flex; align-items:center; gap:12px; padding:9px 13px;
   border:1px solid var(--line); background:rgba(255,255,255,.015);
-  transition:border-color .25s ease, background .25s ease;
+  transition:border-color .25s ease, background .25s ease; cursor: crosshair;
 }
 .aeq-cron-row:hover{ border-color:var(--ac-d); background:rgba(140,112,169,.05); }
 .aeq-cron-row .ic{ flex:none; width:16px; text-align:center; font-size:12px; color:var(--ac); }
@@ -507,10 +507,11 @@
   border:1px solid var(--ac-d);
 }
 .aeq-cron-row .body{ min-width:0; line-height:1.35; }
-.aeq-cron-row .ti{ font-family:var(--fmono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ac); margin-right:6px; }
+.aeq-cron-row .ti{ font-family:var(--fmono); font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ac); margin-right:6px; transition: all .2s ease;}
+.aeq-cron-row :hover .aeq-cron-row .ti {color: var(--ink); transition: all .2s ease;}
 .aeq-cron-row .meta {
     font-family: var(--fread);
-    font-size: 10px;
+    font-size: 9px;
     color: var(--mut);
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -518,6 +519,7 @@
 .aeq-cron-row .meta em {
     color: var(--cy);
     font-style: normal;
+    font-size: 10px;
     margin: 0px 5px;
 }
 .aeq-inv{ box-sizing:border-box; display:flex; flex-direction:column; gap:8px; }
