@@ -646,14 +646,22 @@
 .aeq-tab .chev img{position:relative;top: -17px;width: 35px;height: 35px;background:var(--bg);opacity: .9;}
 
 .aeq-tab-body{
-  position:relative; z-index:2; padding:40px 64px;
-  font-family:var(--fread); font-weight:300; font-size:13.5px; line-height:1.8; color:var(--ink);
-  text-align:justify; hyphens:auto; -webkit-hyphens:auto;
+  position:relative;
+  z-index:2;
+  padding: 30px 64px 40PX;
+  font-family:var(--fread);
+  font-weight:300;
+  font-size:13.5px;
+  line-height: 2;
+  color:var(--ink);
+  text-align:justify;
+  hyphens:auto;
+  -webkit-hyphens:auto;
 }
 .aeq-tab-body p{ margin:0 0 15px; }
 .aeq-tab-body p:last-child{ margin:0; }
-.aeq-tab-body strong, .aeq-tab-body b{ color:var(--ac); font-weight:600; }   
-#larson .aeq-tab-body strong, .aeq-tab-body b{ color:var(--cy);}   
+.aeq-tab-body strong, .aeq-tab-body b{color:var(--ac);font-weight:600;margin: 0px 2px;}   
+#larson .aeq-tab-body strong, #larson .aeq-tab-body b{color:var(--cy);margin: 0px 2px;}   
 .aeq-tab-body em, .aeq-tab-body i{ color:var(--ink); font-style:italic; }
 .aeq-tab-foot {
     position: relative;
