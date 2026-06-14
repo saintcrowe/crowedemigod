@@ -684,6 +684,17 @@
 }
 .aeq-tab-foot span::before{ content:""; width:5px; height:5px; background:var(--ac); flex:none; }
 .aeq-tab-foot span:hover{ border-color:var(--ac);opacity: .9; }
+.aeq-tab-foot span i {
+    color: var(--ac)!important;
+    position: relative;
+    top: -1px;
+    transition: all .25s ease;
+}
+
+.aeq-tab-foot span:hover i {
+    color: var(--ink)!important;
+    transition: all .25s ease;
+}
 .aeq-tab br {
     display: none;
 }
