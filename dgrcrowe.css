@@ -616,7 +616,6 @@
 
 .aeq-tab-head{
   position:relative; z-index:2; text-align:left; padding:60px 52px 44px;
-  background:linear-gradient(180deg, rgba(140,112,169,.07), rgba(140,112,169,0));
 }
 .aeq-tab .ttl{
   margin:0;
@@ -638,10 +637,10 @@
   font-size:8px;
   letter-spacing: 1.5px;
   text-transform:uppercase;
-  color: var(--ac);
+  color: var(--ink);
   line-height:1.7;
 }
-.aeq-tab .sub::before{ content:"// "; color:var(--cy); }
+.aeq-tab .sub::before{ content:"// "; color:var(--ac); }
 
 .aeq-tab .chev{position:relative;z-index:2;height: 20px;border-top: 1px solid #1a1a1a;text-align:center;margin: 0px 8px;}
 .aeq-tab .chev img{position:relative;top: -17px;width: 35px;height: 35px;background:var(--bg);opacity: .9;}
