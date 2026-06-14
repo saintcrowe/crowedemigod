@@ -475,7 +475,13 @@
 .aeq-rel .reveal .nm{ font-family:var(--fmono); font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(--ac); }
 .aeq-rel .reveal p{ margin:0; font-family:var(--fread); font-weight:300; font-size:11.5px; line-height:1.55; text-align:justify; color:var(--ink); }
 .aeq-rel .reveal strong, .aeq-rel .reveal b{ color:var(--ac); font-weight:700; }
-.aeq-rel .reveal i, .aeq-rel .reveal em{ color:var(--ink); font-style:italic; }
+.aeq-rel .reveal i, .aeq-rel .reveal em {
+    color: var(--ink);
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--ac);
+}
 
 .aeq-cron-head, .aeq-cron-list, .aeq-cron-row{ box-sizing:border-box; }
 .aeq-cron-row *{ box-sizing:border-box; }
