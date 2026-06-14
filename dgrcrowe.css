@@ -682,7 +682,6 @@
     opacity: 1;
     transition: all .25s ease;
 }
-.aeq-tab-foot span::before{ content:""; width:5px; height:5px; background:var(--ac); flex:none; }
 .aeq-tab-foot span:hover{ border-color:var(--ac);opacity: .9; }
 .aeq-tab-foot span i {
     color: var(--ac)!important;
