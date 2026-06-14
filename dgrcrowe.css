@@ -582,7 +582,7 @@
 }
 
 .aeq-tab{
-  --ac: var(--group), var(--groupbody);
+  --ac: var(--group, var(--groupbody));
   box-sizing:border-box;
   position:relative;
   max-width:740px;
