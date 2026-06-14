@@ -615,7 +615,7 @@
 .aeq-tab .coord b{ color:var(--ink); font-weight:600; }
 
 .aeq-tab-head{
-  position:relative; z-index:2; text-align:left; padding:60px 52px 44px;
+  position:relative; z-index:2; text-align:left; padding:45px 50px;
 }
 .aeq-tab .ttl{
   margin:0;
@@ -690,3 +690,19 @@
 .aeq-tab-body br {
     display: block!important;
 }
+.aeq-tab .meta{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:26px;
+  font-family:var(--fmono);
+  font-size:8px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color: var(--ink);
+  opacity: .8;
+}
+.aeq-tab .meta .ml, .aeq-tab .meta .mr{ display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
+.aeq-tab .meta .ml::before, .aeq-tab .meta .mr::before{ content:""; width:4px; height:4px; background:var(--ac); flex:none; }
+.aeq-tab .meta .line{ flex:1; height:1px; background:var(--line); }
+.aeq-tab .meta b{ color:var(--mut); font-weight:400; }
